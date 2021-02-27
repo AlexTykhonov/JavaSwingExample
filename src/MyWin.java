@@ -14,13 +14,17 @@ public class MyWin extends JFrame {
         c.add(child);
         // -------------------------------------------
         // настройка окна
-        setTitle("Example window"); // заголовок окна
+        setTitle("Онлайн калькулятор по кредиту. Разумное планирование расходов."); // заголовок окна
         // желательные размеры окна
-        setPreferredSize(new Dimension(640, 480));
+        Dimension dimension = getToolkit().getScreenSize();
+
+        setPreferredSize(new Dimension(dimension.width / 2, dimension.height / 2));
         // завершить приложение при закрытии окна
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         pack(); // устанавливаем желательные размеры
         setVisible(true); // отображаем окно
+        setLocationRelativeTo(null);  // *** this will center your app ***
+
     }
 
     // запуск оконного приложения
