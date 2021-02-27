@@ -3,8 +3,8 @@ import java.awt.*;
 
 public class MyPanel extends JPanel {
     private static final long serialVersionUID = 1L;
-    private String items[] = new String[] { "item1", "item2",
-            "item3", "item4", "item5" };
+    private String items[] = new String[] { "Кредитный платеж", "Узнать сумму кредита",
+            "Узнать погоду", "Отблагодарить разраба", "Сказать спасибо" };
     public MyPanel() {
         setLayout(new BorderLayout()); // выбираем компоновщик
         // сеточная растановка в два столбца
@@ -14,13 +14,13 @@ public class MyPanel extends JPanel {
         JButton jb;
         JComboBox cb = new JComboBox(items);
         jp.add(cb);
-        jb = new JButton("bt1");
+        jb = new JButton("Рассчитаем платеж");
         jp.add(jb);
-        jb = new JButton("bt2");
+        jb = new JButton("Узнай, сколько банк даст в кредит");
         jp.add(jb);
-        jb = new JButton("bt3");
+        jb = new JButton("Сказать спасибо моему учителю");
         jp.add(jb);
-        jb = new JButton("bt4");
+        jb = new JButton("Очистить все значения");
         jp.add(jb);
         // укладываем элементы в ящик
         Box bv = new Box(BoxLayout.Y_AXIS);
