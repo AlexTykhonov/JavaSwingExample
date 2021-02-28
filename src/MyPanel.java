@@ -15,6 +15,7 @@ public class MyPanel extends JPanel {
         JComboBox cb = new JComboBox(items);
         jp.add(cb);
         jb = new JButton("Рассчитаем платеж");
+// читать статью про кнопки
         jp.add(jb);
         jb = new JButton("Узнай, сколько банк даст в кредит");
         jp.add(jb);
@@ -28,7 +29,7 @@ public class MyPanel extends JPanel {
         bv.add(Box.createHorizontalStrut(60));
         JTextArea jta = new JTextArea();
         // рамка вокруг текстового поля
-        jta.setBorder(BorderFactory.createLineBorder(Color.green));
+        jta.setBorder(BorderFactory.createLineBorder(Color.blue));
         bv.add(jta);
         // пустое место в 15 пикселей
         bv.add(Box.createVerticalStrut(15));
@@ -37,11 +38,11 @@ public class MyPanel extends JPanel {
         // jta.setMaximumSize(new Dimension(60,100));
         // jta.setAlignmentX(LEFT_ALIGNMENT); // явно задаем выравнивание
         jta = new JTextArea();
-        jta.setBorder(BorderFactory.createLineBorder(Color.green));
+        jta.setBorder(BorderFactory.createLineBorder(Color.blue));
         bv.add(jta);
         bv.add(Box.createVerticalStrut(15));
         jta = new JTextArea();
-        jta.setBorder(BorderFactory.createLineBorder(Color.green));
+        jta.setBorder(BorderFactory.createLineBorder(Color.blue));
         bv.add(jta);
         bv.add(Box.createVerticalStrut(15));
         add(jp); // добавляем панель в центр
