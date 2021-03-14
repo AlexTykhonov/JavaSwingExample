@@ -31,12 +31,13 @@ public class SimpleGui extends JFrame {
         button1.setSelected(true);
         container.add(button2);
         container.add(checkbox);
-        button1.addActionListener(new ButtonEventListener());
+        jButton.addActionListener(new ButtonEventListener());
         container.add(jButton);
     }
 
     class ButtonEventListener implements ActionListener {
 
+        @Override
         public void actionPerformed(ActionEvent actionEvent) {
             String message = "";
             message += "Button was pressed \n";
